@@ -1,0 +1,77 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  padding: .2em;
+}
+
+img:nth-child(even) {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+  img {
+    display: inline-block;
+    width: 50%;
+  }
+
+  img:nth-child(even) {
+    display: inline-block;
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  img:nth-child(1){
+    display: none;
+  }
+
+  img:nth-child(2){
+    float: left;
+  }
+
+  img:nth-child(3){
+    align-items: center;
+  }
+
+  img {
+    display: inline;
+    width: 33.3%;
+    margin: 0;
+    float: none;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+  img {
+    display: inline-block;
+    float: none;
+    width: 25%;
+  }
+
+  img:nth-child(1){
+    display: inline-block;
+    float: left;
+  }
+  
+}
