@@ -20,7 +20,7 @@ img {
   width: 100%;
   display: inline-block;
   margin: 0;
-  padding: .2em;
+  padding: 0;
 }
 
 img:nth-child(even) {
@@ -67,4 +67,7 @@ img:nth-child(even) {
     display: inline-block;
   }
 
+  body {
+    padding-left: .5em;
+  }
 }
